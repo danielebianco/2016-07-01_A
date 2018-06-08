@@ -43,7 +43,14 @@ public class Model {
 		}
 		System.out.format("Grafo creato: %d archi, %d nodi\n", grafo.edgeSet().size(), grafo.vertexSet().size());
 	}
-
+	
+	/* 
+	 * Dobbiamo iterare su tutti gli archi uscenti, sommarne i pesi
+	 * Dobbiamo iterare su tutti gli archi entranti, sottrarne i pesi
+	 * PER TUTTI I PILOTI
+	 * Trovare quello che ha la differenza più alta 
+	 */
+	
 	public Driver getBestDriver() {
 		if (grafo == null) {
 			new RuntimeException("Creare il grafo!");
